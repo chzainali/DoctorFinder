@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "677451441189",
+    "project_id": "docfinder-f43eb",
+    "storage_bucket": "docfinder-f43eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677451441189:android:3503ccd56386f65dd4cbcc",
+        "android_client_info": {
+          "package_name": "com.dev.doctorfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677451441189-1dtli1gaq273nu4igf1iq8v9p4d1mu42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMa1vF1-W3EzXLrnUyBS6rzYi-HWk00Bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677451441189-1dtli1gaq273nu4igf1iq8v9p4d1mu42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

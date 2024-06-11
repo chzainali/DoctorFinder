@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:src="@drawable/doctor_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Admin"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTop">
+
+        <TextView
+            android:id="@+id/tv_Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_baseline_home_24"
+            android:drawableTint="@color/main"
+            android:text="Home"
+            android:drawablePadding="10dp"
+            android:textColor="@color/main"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/llTop"
+            app:layout_constraintStart_toStartOf="@+id/llTop"
+            app:layout_constraintTop_toBottomOf="@+id/llTop" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#ccc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Home" />
+
+        <TextView
+            android:id="@+id/tvAddDoctors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableTint="@color/main"
+            android:text="Add Doctor"
+            android:textColor="@color/main"
+            android:drawableStart="@drawable/ic_baseline_person_add_24"
+            android:drawablePadding="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/llTop"
+            app:layout_constraintStart_toStartOf="@+id/llTop"
+            app:layout_constraintTop_toBottomOf="@+id/llTop" />
+
+        <TextView
+            android:id="@+id/tvViewAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableTint="@color/main"
+            android:text="View Appointments"
+            android:textColor="@color/main"
+            android:drawablePadding="10dp"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/llTop"
+            app:layout_constraintStart_toStartOf="@+id/llTop"
+            app:layout_constraintTop_toBottomOf="@+id/llTop" />
+        <TextView
+            android:id="@+id/AddProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableTint="@color/main"
+            android:text="Add Products"
+            android:drawablePadding="10dp"
+            android:textColor="@color/main"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
+            app:layout_constraintEnd_toEndOf="@+id/llTop"
+            app:layout_constraintStart_toStartOf="@+id/llTop"
+            app:layout_constraintTop_toBottomOf="@+id/llTop" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:background="#ccc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Home" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:drawableTint="@color/main"
+        android:text="Logout"
+        android:drawablePadding="10dp"
+        android:textColor="@color/main"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/ic_baseline_logout_24"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/llTop"
+        app:layout_constraintStart_toStartOf="@+id/llTop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

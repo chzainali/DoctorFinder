@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shop2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/ivImage"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Product Name"
+                    android:textColor="@color/main"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Product Price"
+                    android:textColor="@color/main"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlMinus"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/ic_baseline_circle_24"
+                        android:backgroundTint="@color/main">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="14dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_baseline_horizontal_rule_24" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/main"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlPlus"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/ic_baseline_circle_24"
+                        android:backgroundTint="@color/main">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_baseline_add_24" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This"
+                    android:textColor="@color/main"
+                    app:trimExpandedText="@string/read_less"
+                    app:trimCollapsedText="@string/read_more"
+                    app:trimMode="trimModeLength"
+                    android:scrollbars = "vertical"
+                    app:trimLength="18"
+                    android:layout_marginBottom="5dp"
+                    app:colorClickableText="#025881"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddToCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_cart"
+                    android:backgroundTint="@color/main"
+                    android:drawableTint="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:text="Add to Cart"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawableEnd="@drawable/ic_baseline_shopping_cart_24"
+                    android:drawablePadding="10dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:visibility="gone"
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_cart"
+                    android:backgroundTint="@color/main"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingVertical="5dp"
+                    android:text="Delete"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

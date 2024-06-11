@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book your Appointment"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_18sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                />
+
+
+            <EditText
+                android:id="@+id/et_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Appointment Title"
+                android:background="@drawable/bg_field"
+                android:textColor="@color/black"
+                android:inputType="textAutoComplete"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_baseline_text_fields_24"
+                android:paddingStart="@dimen/_10sdp"
+
+                />
+            <EditText
+                android:id="@+id/etDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Add Some Details"
+                android:background="@drawable/bg_field"
+                android:textColor="@color/black"
+                android:inputType="textAutoComplete"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_baseline_text_fields_24"
+                android:paddingStart="@dimen/_10sdp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_time"
+                android:minHeight="45dp"
+                android:background="@drawable/bg_field"
+                android:hint="Set Date"
+                android:drawableStart="@drawable/ic_baseline_calendar_month_balck_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_margin="10dp"
+                />
+
+<!--            <TextView-->
+<!--                android:id="@+id/etCategories"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:minHeight="45dp"-->
+<!--                android:fontFamily="sans-serif-light"-->
+<!--                android:hint="Available Slots"-->
+<!--                android:paddingStart="@dimen/_10sdp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:background="@drawable/bg_field"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                android:paddingEnd="@dimen/_10sdp"-->
+<!--                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--                android:drawableStart="@drawable/ic_baseline_category_24"-->
+<!--                android:drawablePadding="@dimen/_10sdp"-->
+<!--                />-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_field"
+                android:text="Save"
+                android:layout_margin="10dp"
+                android:textColor="@color/purple_500"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

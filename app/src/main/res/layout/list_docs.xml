@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/app_bg"
+    android:backgroundTint="@color/purple_700">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImage"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main">
+
+            <ImageView
+                android:id="@+id/img_doc"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:minWidth="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/doctor_img" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Dr Ahmed"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surgeon"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tV_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="details of the doctor will be here  "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/cvImage"
+        app:layout_constraintStart_toEndOf="@+id/materialRatingBar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/materialRatingBar"
+        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:progress="100"
+        android:progressTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="#2F7A32"
+        android:text="View More"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/materialRatingBar"
+        app:layout_constraintTop_toBottomOf="@+id/materialRatingBar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
